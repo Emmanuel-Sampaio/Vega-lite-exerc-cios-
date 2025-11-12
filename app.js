@@ -7,12 +7,11 @@ document.write(`
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vega-Lite API — Exercícios 2025.2</title>
 
-  <!-- Importa as bibliotecas Vega, Vega-Lite e Vega-Embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"><\/script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"><\/script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"><\/script>
 
-  <!-- Estilo da página -->
+
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
@@ -51,11 +50,10 @@ document.write(`
 </html>
 `);
 
-// Aguarda o carregamento das bibliotecas
-window.addEventListener('load', async function() {
-  const dataUrl = "life_style_data_sample.csv";
 
-  // ======== Gráfico de Barras ========
+window.addEventListener('load', async function() {
+  const dataUrl = "life_style_data_sample (1).csv";
+
   const barSpec = {
     data: { url: dataUrl },
     mark: "bar",
@@ -68,7 +66,7 @@ window.addEventListener('load', async function() {
     title: "Média de Max BPM por Tipo de Treino"
   };
 
-  // ======== Scatterplot ========
+
   const scatterSpec = {
     data: { url: dataUrl },
     mark: "point",
